@@ -7,8 +7,6 @@ export function isPalindrome(text) {
 
   while (inicio < fim) {
     if (textWithoutSpaces[inicio] !== textWithoutSpaces[fim]) {
-      console.log(textWithoutSpaces[inicio])
-      console.log(textWithoutSpaces[fim])
       return false;
     }
     inicio++;
