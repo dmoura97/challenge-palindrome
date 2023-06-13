@@ -2,15 +2,15 @@ import { removeSpecialCharacters } from "./utils/removeSpecialCharacters.js";
 
 export function isPalindrome(text) {
   const textWithoutSpaces = removeSpecialCharacters(text.toLowerCase());
-  let inicio = 0;
-  let fim = textWithoutSpaces.length - 1;
+  let start = 0;
+  let end = textWithoutSpaces.length - 1;
 
-  while (inicio < fim) {
-    if (textWithoutSpaces[inicio] !== textWithoutSpaces[fim]) {
+  while (start < end) {
+    if (textWithoutSpaces[start] !== textWithoutSpaces[end]) {
       return false;
     }
-    inicio++;
-    fim--;
+    start++;
+    end--;
   }
 
   return true;
